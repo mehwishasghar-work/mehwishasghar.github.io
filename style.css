@@ -108,3 +108,41 @@ footer {
         gap: 15px;
     }
 }
+.eyebrow {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #38bdf8;
+    margin-bottom: 18px;
+}
+
+.hero-subtitle {
+    max-width: 720px;
+    margin: 0 auto 30px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+.hero-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-links a {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #38bdf8;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hero-links a:hover {
+    background: #38bdf8;
+    color: #0f172a;
+}
