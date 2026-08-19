@@ -468,3 +468,49 @@ footer {
     background: #e0f2fe;
     transform: translateY(-2px);
 }
+/* ================================
+   PROJECT CASE STUDY
+================================ */
+
+#projects article {
+    padding: 30px;
+    margin-bottom: 28px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+}
+
+#projects article h3 {
+    font-size: 1.5rem;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+#projects article > p:first-of-type {
+    color: #0369a1;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#projects article p {
+    max-width: 850px;
+}
+
+#projects article strong {
+    color: #0f172a;
+}
+
+
+/* Project technology / role information */
+
+#projects article p:last-child {
+    margin-top: 14px;
+}
+
+
+/* Keep gallery visually connected to project */
+
+#projects .project-gallery {
+    margin-top: 24px;
+    margin-bottom: 28px;
+}
