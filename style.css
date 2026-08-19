@@ -172,6 +172,4 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-.project-gallery {
-    border: 5px solid red !important;
-}
+
