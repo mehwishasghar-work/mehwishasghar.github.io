@@ -318,3 +318,67 @@ footer {
         font-size: 1.65rem;
     }
 }
+/* ================================
+   PROJECT IMAGE GALLERIES
+================================ */
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    grid-template-rows: 190px 190px;
+    gap: 14px;
+    margin: 28px 0 32px;
+}
+
+.project-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* First image becomes the featured image */
+
+.project-gallery img:first-child {
+    grid-row: 1 / 3;
+}
+
+/* Image hover */
+
+.project-gallery img:hover {
+    transform: scale(1.015);
+    box-shadow:
+        0 16px 35px rgba(15, 23, 42, 0.15);
+}
+
+
+/* ================================
+   MOBILE GALLERY
+================================ */
+
+@media (max-width: 700px) {
+
+    .project-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 12px;
+    }
+
+    .project-gallery img:first-child {
+        grid-row: auto;
+    }
+
+    .project-gallery img {
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+}
