@@ -670,3 +670,56 @@ footer {
     color: #475569;
     max-width: 850px;
 }
+/* ================================
+   SKILLS
+================================ */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.skill-group {
+    padding: 24px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.skill-group h3 {
+    font-size: 1rem;
+    color: #0f172a;
+    margin-bottom: 16px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tags span {
+    padding: 6px 10px;
+    background: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 7px;
+    color: #475569;
+    font-size: 0.78rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.skill-tags span:hover {
+    border-color: #7dd3fc;
+    color: #0369a1;
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 700px) {
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
