@@ -631,3 +631,42 @@ footer {
     color: #0284c7;
     transform: translateX(3px);
 }
+/* ================================
+   EXPERIENCE TIMELINE
+================================ */
+
+#experience article {
+    position: relative;
+    padding: 4px 0 32px 34px;
+    margin: 0 0 28px 10px;
+    border-left: 2px solid #e2e8f0;
+}
+
+#experience article:last-child {
+    margin-bottom: 0;
+    padding-bottom: 4px;
+}
+
+#experience article::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 4px;
+    width: 11px;
+    height: 11px;
+    background: #38bdf8;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #bae6fd;
+}
+
+#experience article h3 {
+    font-size: 1.3rem;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+#experience article p {
+    color: #475569;
+    max-width: 850px;
+}
