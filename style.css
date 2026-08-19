@@ -723,3 +723,38 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* ================================
+   HERO CONTENT
+================================ */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-role {
+    margin: 0 auto 18px;
+    color: #e0f2fe;
+    font-size: clamp(1.15rem, 2vw, 1.4rem);
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.hero-subtitle {
+    max-width: 760px;
+}
+
+
+/* Small visual divider */
+
+.hero-content::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 2px;
+    margin: 35px auto 0;
+    background: #38bdf8;
+    opacity: 0.8;
+}
