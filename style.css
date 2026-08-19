@@ -162,6 +162,10 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.project-gallery img:first-child {
+    grid-column: 1 / -1;
+}
+
 .project-gallery img:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
@@ -171,5 +175,8 @@ footer {
     .project-gallery {
         grid-template-columns: 1fr;
     }
-}
 
+    .project-gallery img:first-child {
+        grid-column: auto;
+    }
+}
