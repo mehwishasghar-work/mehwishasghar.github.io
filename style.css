@@ -568,3 +568,66 @@ footer {
     color: #475569;
     font-weight: 600;
 }
+/* ================================
+   INDUSTRY CONTRIBUTION CARDS
+================================ */
+
+#published-work article {
+    position: relative;
+    padding: 30px;
+    margin-bottom: 26px;
+
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+#published-work article:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 14px 30px rgba(15, 23, 42, 0.07);
+}
+
+#published-work article h3 {
+    color: #0f172a;
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+}
+
+#published-work article p {
+    color: #475569;
+}
+
+#published-work article strong {
+    color: #0f172a;
+}
+
+
+/* Industry galleries */
+
+#published-work .project-gallery {
+    margin-top: 22px;
+    margin-bottom: 25px;
+}
+
+
+/* Links inside industry cards */
+
+#published-work article a {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 8px;
+
+    color: #0369a1;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#published-work article a:hover {
+    color: #0284c7;
+    transform: translateX(3px);
+}
