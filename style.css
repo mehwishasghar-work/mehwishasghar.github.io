@@ -835,3 +835,17 @@ nav a {
     background: #38bdf8;
     opacity: 0.8;
 }
+/* ================================
+   PROJECT IMAGE REFINEMENT
+================================ */
+
+.project-gallery img {
+    background: #f8fafc;
+    object-position: center;
+}
+
+@media (min-width: 801px) {
+    .project-gallery img {
+        min-height: 150px;
+    }
+}
