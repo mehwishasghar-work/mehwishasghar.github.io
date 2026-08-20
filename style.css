@@ -842,6 +842,7 @@ nav a {
 .project-gallery img {
     background: #f8fafc;
     object-position: center;
+   cursor: zoom-in;
 }
 
 @media (min-width: 801px) {
