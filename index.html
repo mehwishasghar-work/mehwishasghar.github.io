@@ -34,22 +34,30 @@
         </p>
 
         <div class="hero-links">
-            <a href="#projects">View My Work</a>
+
+            <a href="#projects">
+                View My Work
+            </a>
 
             <a href="#published-work">
                 Published Contributions
             </a>
 
-            <a href="Mehwish_Asghar_CV.pdf" target="_blank">
+            <a
+                href="Mehwish_Asghar_CV.pdf"
+                target="_blank"
+            >
                 View CV
             </a>
 
             <a href="#contact">
                 Get in Touch
             </a>
+
         </div>
 
         <nav>
+
             <a href="#about">About</a>
             <a href="#research">Research</a>
             <a href="#projects">Projects</a>
@@ -57,6 +65,7 @@
             <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
+
         </nav>
 
     </header>
@@ -165,6 +174,7 @@
                 rigorous problem solving.
             </p>
 
+
             <div class="research-focus">
 
                 <span>Adaptive AI Agents</span>
@@ -188,9 +198,11 @@
             <h2>Academic & Technical Projects</h2>
 
 
-            <!-- FARZONE -->
+            <!-- ============================
+                 FARZONE
+            ============================= -->
 
-            <article>
+            <article class="project-farzone">
 
                 <h3>FarZone</h3>
 
@@ -287,33 +299,9 @@
             </article>
 
 
-            <!-- HEARTS -->
-
-            <article>
-
-                <h3>Hearts Card Game</h3>
-
-                <p>
-                    A software development project exploring object-oriented design,
-                    game logic, AI decision-making, card systems, and interactive
-                    user interfaces.
-                </p>
-
-                <p>
-                    Implemented game-state management, card distribution and
-                    validation, player and AI behaviour, trick management, and
-                    interactive gameplay using C# and Unity/WPF-based development.
-                </p>
-
-                <p>
-                    <strong>Technologies:</strong>
-                    C#, C# WPF, Unity, Object-Oriented Programming, AI Logic, JSON
-                </p>
-
-            </article>
-
-
-            <!-- GROCERY BILLING -->
+            <!-- ============================
+                 GROCERY BILLING
+            ============================= -->
 
             <article>
 
@@ -373,7 +361,9 @@
             </article>
 
 
-            <!-- LIBRARY -->
+            <!-- ============================
+                 LIBRARY
+            ============================= -->
 
             <article>
 
@@ -428,9 +418,11 @@
             </article>
 
 
-            <!-- STARZ CITY -->
+            <!-- ============================
+                 STARZ CITY
+            ============================= -->
 
-            <article>
+            <article class="project-starz">
 
                 <h3>STARZ CITY — Cinema Ticket Booking System</h3>
 
@@ -472,6 +464,52 @@
                     <strong>Technical Focus:</strong>
                     HCI, UI/UX Design, Prototyping, Usability,
                     MySQL, User Interaction
+                </p>
+
+            </article>
+
+
+            <!-- ============================
+                 HEARTS
+            ============================= -->
+
+            <article class="project-hearts">
+
+                <h3>Hearts Card Game</h3>
+
+                <p>
+                    <strong>
+                        Software Development • Academic / Technical Project
+                    </strong>
+                </p>
+
+                <p>
+                    Developed a digital implementation of the classic Hearts card
+                    game, focusing on object-oriented architecture, game-state
+                    management, player behaviour, AI decision-making, and
+                    interactive gameplay.
+                </p>
+
+                <p>
+                    Implemented card modelling, deck generation and shuffling,
+                    card distribution, trick management, rule validation, player
+                    state management, and AI behaviour. The project was developed
+                    across C# WPF and Unity environments, providing experience in
+                    adapting the same game logic to different interactive
+                    architectures.
+                </p>
+
+                <p>
+                    The AI logic included decision-making around card selection,
+                    trick behaviour, and avoiding undesirable card plays where
+                    possible. The project also involved JSON-based data storage
+                    and interactive card-selection and presentation systems.
+                </p>
+
+                <p>
+                    <strong>Technical Focus:</strong>
+                    C#, C# WPF, Unity, Object-Oriented Programming,
+                    AI Logic, Game State Management, JSON
                 </p>
 
             </article>
@@ -764,8 +802,6 @@
             <h2>Experience</h2>
 
 
-            <!-- CONNECT TECHNOLOGIES -->
-
             <article>
 
                 <h3>Unity 3D Developer — Connect Technologies</h3>
@@ -791,8 +827,6 @@
             </article>
 
 
-            <!-- FREELANCE / INDIE -->
-
             <article>
 
                 <h3>Unity 3D Game Developer — Freelance / Indie</h3>
@@ -816,8 +850,6 @@
 
             </article>
 
-
-            <!-- GIFT UNIVERSITY -->
 
             <article>
 
@@ -863,9 +895,6 @@
 
             <div class="skills-grid">
 
-
-                <!-- PROGRAMMING -->
-
                 <div class="skill-group">
 
                     <h3>Programming</h3>
@@ -883,8 +912,6 @@
 
                 </div>
 
-
-                <!-- DEVELOPMENT -->
 
                 <div class="skill-group">
 
@@ -904,8 +931,6 @@
                 </div>
 
 
-                <!-- TOOLS -->
-
                 <div class="skill-group">
 
                     <h3>Tools & Platforms</h3>
@@ -923,8 +948,6 @@
 
                 </div>
 
-
-                <!-- DATA -->
 
                 <div class="skill-group">
 
@@ -1100,7 +1123,7 @@
 
         lightbox.addEventListener(
             "click",
-            (event) => {
+            event => {
 
                 if (event.target === lightbox) {
                     closeLightbox();
@@ -1112,7 +1135,7 @@
 
         document.addEventListener(
             "keydown",
-            (event) => {
+            event => {
 
                 if (
                     event.key === "Escape" &&
