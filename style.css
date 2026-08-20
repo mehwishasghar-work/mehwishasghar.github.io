@@ -469,7 +469,70 @@ p:last-child {
 
     transform: translateY(-2px);
 }
+.research-project {
+    margin-top: 2rem;
+    padding: 1.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    background: var(--card-background);
+}
 
+.research-project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.research-project-header h3 {
+    margin: 0.35rem 0 0;
+}
+
+.research-project-header a {
+    white-space: nowrap;
+}
+
+.project-label {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.7;
+}
+
+.research-project-details {
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.research-project-details div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.research-project-details strong {
+    font-size: 0.9rem;
+}
+
+.research-project-details span {
+    opacity: 0.82;
+}
+
+.research-relevance {
+    margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+    .research-project-header {
+        flex-direction: column;
+    }
+
+    .research-project-header a {
+        white-space: normal;
+    }
+}
 
 /* ================================
    PROJECT CARDS
