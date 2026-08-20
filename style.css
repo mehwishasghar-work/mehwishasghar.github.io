@@ -112,9 +112,11 @@ header p {
 
 .eyebrow {
     font-size: 0.78rem;
+
     font-weight: 700;
 
     letter-spacing: 4px;
+
     text-transform: uppercase;
 
     color: #38bdf8;
@@ -130,6 +132,7 @@ header p {
     font-size: clamp(1.15rem, 2vw, 1.4rem);
 
     font-weight: 600;
+
     letter-spacing: 0.2px;
 }
 
@@ -139,20 +142,28 @@ header p {
     margin: 0 auto 35px;
 
     font-size: 1.12rem;
+
     line-height: 1.8;
 
     color: #cbd5e1;
 }
+
+
+/* ================================
+   HERO LINKS
+================================ */
 
 .hero-links {
     position: relative;
     z-index: 2;
 
     display: flex;
+
     justify-content: center;
     align-items: center;
 
     gap: 12px;
+
     flex-wrap: wrap;
 
     margin-bottom: 50px;
@@ -160,6 +171,7 @@ header p {
 
 .hero-links a {
     display: inline-flex;
+
     align-items: center;
     justify-content: center;
 
@@ -168,6 +180,7 @@ header p {
     padding: 11px 22px;
 
     border: 1px solid rgba(56, 189, 248, 0.45);
+
     border-radius: 8px;
 
     color: white;
@@ -177,6 +190,7 @@ header p {
     text-decoration: none;
 
     font-size: 0.92rem;
+
     font-weight: 600;
 
     transition: 0.25s ease;
@@ -184,6 +198,7 @@ header p {
 
 .hero-links a:hover {
     background: #38bdf8;
+
     border-color: #38bdf8;
 
     color: #0b1120;
@@ -193,43 +208,18 @@ header p {
 
 
 /* ================================
-   HERO DIVIDER
-================================ */
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.hero-content::after {
-    content: "";
-
-    display: block;
-
-    width: 48px;
-    height: 2px;
-
-    margin: 35px auto 0;
-
-    background: #38bdf8;
-
-    opacity: 0.8;
-}
-
-
-/* ================================
    NAVIGATION
 ================================ */
 
 nav {
     position: sticky;
+
     top: 14px;
+
     z-index: 1000;
 
     width: fit-content;
+
     max-width: calc(100% - 30px);
 
     margin: 30px auto 0;
@@ -237,25 +227,30 @@ nav {
     padding: 10px 14px;
 
     display: flex;
+
     justify-content: center;
     align-items: center;
 
     flex-wrap: wrap;
+
     gap: 6px;
 
     background: rgba(15, 23, 42, 0.88);
 
     border: 1px solid rgba(148, 163, 184, 0.2);
+
     border-radius: 12px;
 
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 
-    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.18);
+    box-shadow:
+        0 10px 30px rgba(2, 6, 23, 0.18);
 }
 
 nav a {
     display: inline-flex;
+
     align-items: center;
 
     padding: 8px 12px;
@@ -267,6 +262,7 @@ nav a {
     border-radius: 7px;
 
     font-size: 0.82rem;
+
     font-weight: 600;
 
     transition:
@@ -291,9 +287,11 @@ section {
     background: #ffffff;
 
     margin: 24px 0;
+
     padding: 44px 52px;
 
     border: 1px solid #e2e8f0;
+
     border-radius: 18px;
 
     box-shadow:
@@ -323,6 +321,7 @@ h2 {
     font-size: clamp(1.7rem, 3vw, 2.2rem);
 
     line-height: 1.2;
+
     letter-spacing: -0.7px;
 
     margin-bottom: 28px;
@@ -330,6 +329,7 @@ h2 {
 
 h3 {
     color: #0f172a;
+
     line-height: 1.3;
 }
 
@@ -339,101 +339,6 @@ p {
 
 p:last-child {
     margin-bottom: 0;
-}
-
-
-/* ================================
-   ARTICLES
-================================ */
-
-article {
-    margin-bottom: 38px;
-}
-
-article:last-child {
-    margin-bottom: 0;
-}
-
-article h3 {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-}
-
-article p {
-    color: #475569;
-}
-
-
-/* ================================
-   LINKS
-================================ */
-
-a:hover {
-    color: #0284c7;
-}
-
-
-/* ================================
-   FOOTER
-================================ */
-
-footer {
-    text-align: center;
-
-    padding: 45px 20px;
-
-    background: #0b1120;
-
-    color: #94a3b8;
-
-    margin-top: 55px;
-
-    font-size: 0.9rem;
-}
-
-
-/* ================================
-   PROJECT GALLERY
-================================ */
-
-.project-gallery {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 14px;
-
-    margin: 28px 0 32px;
-}
-
-.project-gallery img {
-    width: 100%;
-
-    aspect-ratio: 16 / 9;
-
-    object-fit: cover;
-    object-position: center;
-
-    display: block;
-
-    background: #f8fafc;
-
-    border-radius: 12px;
-
-    border: 1px solid #e2e8f0;
-
-    cursor: zoom-in;
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-}
-
-.project-gallery img:hover {
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 10px 25px rgba(15, 23, 42, 0.12);
 }
 
 
@@ -537,6 +442,7 @@ footer {
 
 .research-focus span {
     display: inline-flex;
+
     align-items: center;
 
     padding: 8px 14px;
@@ -566,13 +472,11 @@ footer {
 
 
 /* ================================
-   PROJECT CASE STUDY CARDS
+   PROJECT CARDS
 ================================ */
 
-#projects > article {
+.project-card {
     padding: 30px;
-
-    margin-bottom: 0;
 
     background: #f8fafc;
 
@@ -585,14 +489,14 @@ footer {
         box-shadow 0.25s ease;
 }
 
-#projects > article:hover {
+.project-card:hover {
     transform: translateY(-3px);
 
     box-shadow:
         0 14px 30px rgba(15, 23, 42, 0.07);
 }
 
-#projects > article h3 {
+.project-card h3 {
     font-size: 1.45rem;
 
     color: #0f172a;
@@ -600,11 +504,13 @@ footer {
     margin-bottom: 10px;
 }
 
-#projects > article p {
-    max-width: 850px;
+.project-card p {
+    color: #475569;
+
+    max-width: 900px;
 }
 
-#projects > article > p:first-of-type {
+.project-card > p:first-of-type {
     color: #0369a1;
 
     font-size: 0.9rem;
@@ -612,40 +518,108 @@ footer {
     font-weight: 600;
 }
 
-#projects > article strong {
+.project-card strong {
     color: #0f172a;
 }
 
-#projects .project-gallery {
-    margin-top: 24px;
-    margin-bottom: 28px;
+
+/* ================================
+   PROJECT STRUCTURE
+================================ */
+
+/*
+   FarZone
+   Starz City
+   Hearts
+   are full width.
+
+   Grocery + Library
+   are two separate cards side-by-side.
+*/
+
+.project-featured,
+.project-full {
+    width: 100%;
+}
+
+.academic-two-column {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+
+    margin: 22px 0;
+}
+
+.academic-two-column .project-card {
+    width: 100%;
+    min-width: 0;
 }
 
 
 /* ================================
-   FARZONE FEATURE CARD
+   PROJECT GALLERY
 ================================ */
 
-#projects > .project-farzone {
-    grid-column: 1 / -1;
+.project-gallery {
+    display: grid;
+
+    /*
+       Small images:
+       three images in one line on desktop.
+    */
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin: 24px 0 28px;
+}
+
+.project-gallery img {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+
+    background: #f8fafc;
+
+    border-radius: 10px;
+
+    border: 1px solid #e2e8f0;
+
+    cursor: zoom-in;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.project-gallery img:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(15, 23, 42, 0.12);
 }
 
 
-/* ================================
-   STARZ CITY FEATURE CARD
-================================ */
+/*
+   For Grocery and Library:
+   keep images compact inside their narrower cards.
+*/
 
-#projects > .project-starz {
-    grid-column: 1 / -1;
+.academic-two-column .project-gallery {
+    gap: 10px;
 }
 
-
-/* ================================
-   HEARTS CARD
-================================ */
-
-#projects > .project-hearts {
-    grid-column: 1 / -1;
+.academic-two-column .project-gallery img {
+    aspect-ratio: 16 / 9;
 }
 
 
@@ -728,15 +702,40 @@ footer {
 
 
 /* ================================
-   INDUSTRY CONTRIBUTION CARDS
+   RESEARCH RELEVANCE
 ================================ */
+
+.research-relevance {
+    padding: 16px 18px;
+
+    background: #f0f9ff;
+
+    border-left: 3px solid #38bdf8;
+
+    border-radius: 8px;
+}
+
+
+/* ================================
+   PUBLISHED CONTRIBUTIONS
+================================ */
+
+/*
+   IMPORTANT:
+   Industry projects are ALWAYS
+   one card per row.
+
+   No 2-column layout.
+*/
 
 #published-work > article {
     position: relative;
 
+    width: 100%;
+
     padding: 30px;
 
-    margin-bottom: 0;
+    margin-bottom: 22px;
 
     background: #ffffff;
 
@@ -747,6 +746,10 @@ footer {
     transition:
         transform 0.25s ease,
         box-shadow 0.25s ease;
+}
+
+#published-work > article:last-child {
+    margin-bottom: 0;
 }
 
 #published-work > article:hover {
@@ -766,15 +769,32 @@ footer {
 
 #published-work > article p {
     color: #475569;
+
+    max-width: 900px;
 }
 
 #published-work > article strong {
     color: #0f172a;
 }
 
+
+/*
+   Industry galleries:
+   three small images in one line.
+*/
+
 #published-work .project-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 12px;
+
     margin-top: 22px;
+
     margin-bottom: 25px;
+}
+
+#published-work .project-gallery img {
+    aspect-ratio: 16 / 9;
 }
 
 
@@ -789,6 +809,7 @@ footer {
     justify-content: center;
 
     margin-top: 10px;
+
     margin-right: 8px;
 
     padding: 8px 14px;
@@ -850,6 +871,7 @@ footer {
     position: absolute;
 
     left: -7px;
+
     top: 4px;
 
     width: 11px;
@@ -946,145 +968,21 @@ footer {
 
 
 /* ================================
-   DESKTOP PROJECT GRID
+   FOOTER
 ================================ */
 
-@media (min-width: 901px) {
+footer {
+    text-align: center;
 
-    #projects {
-        display: grid;
+    padding: 45px 20px;
 
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
+    background: #0b1120;
 
-        gap: 22px;
-    }
+    color: #94a3b8;
 
-    #projects > h2,
-    #projects > p {
-        grid-column: 1 / -1;
-    }
+    margin-top: 55px;
 
-    #projects > article {
-        width: 100%;
-
-        min-width: 0;
-
-        height: 100%;
-    }
-
-
-    /*
-
-       FINAL PROJECT ORDER:
-
-       Row 1:
-       FarZone — full width
-
-       Row 2:
-       Grocery | Library
-
-       Row 3:
-       STARZ CITY — full width
-
-       Row 4:
-       Hearts — full width
-
-    */
-
-
-    #projects > article:nth-of-type(2) {
-        grid-column: 1;
-    }
-
-    #projects > article:nth-of-type(3) {
-        grid-column: 2;
-    }
-
-
-    #projects > article:nth-of-type(4),
-    #projects > article:nth-of-type(5) {
-        grid-column: 1 / -1;
-    }
-
-
-    #published-work {
-        display: grid;
-
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-
-        gap: 22px;
-    }
-
-    #published-work > h2,
-    #published-work > p {
-        grid-column: 1 / -1;
-    }
-
-    #published-work > article {
-        width: 100%;
-
-        min-width: 0;
-
-        height: 100%;
-    }
-
-
-    /*
-       Galleries inside desktop cards
-    */
-
-    #projects .project-gallery,
-    #published-work .project-gallery {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-    }
-
-
-    /*
-       FarZone has 3 images.
-    */
-
-    #projects > .project-farzone .project-gallery img:last-child {
-        grid-column: 1 / -1;
-
-        width: 50%;
-
-        justify-self: center;
-    }
-
-
-    /*
-       STARZ CITY has 2 images,
-       so they remain side-by-side.
-    */
-
-    #projects > .project-starz .project-gallery {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-    }
-
-}
-
-
-/* ================================
-   TABLET PROJECT GRID
-================================ */
-
-@media (max-width: 900px) {
-
-    #projects > article,
-    #published-work > article {
-        width: 100%;
-    }
-
-    #projects .project-gallery,
-    #published-work .project-gallery {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-    }
-
+    font-size: 0.9rem;
 }
 
 
@@ -1147,8 +1045,7 @@ footer {
 
     transform: scale(0.96);
 
-    transition:
-        transform 0.25s ease;
+    transition: transform 0.25s ease;
 }
 
 .image-lightbox.active img {
@@ -1169,7 +1066,6 @@ footer {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     border: 1px solid rgba(255, 255, 255, 0.25);
@@ -1208,23 +1104,41 @@ body.lightbox-open {
 
 
 /* ================================
-   RESPONSIVE
+   TABLET
 ================================ */
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
 
-    .profile-highlights {
-        grid-template-columns:
-            repeat(2, 1fr);
+    main {
+        width: min(100% - 36px, 1120px);
     }
 
+    .academic-two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .project-gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .profile-highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 
-@media (max-width: 800px) {
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
 
     main {
-        width: min(100% - 28px, 1120px);
+        width: calc(100% - 28px);
 
         padding: 35px 0;
     }
@@ -1240,22 +1154,31 @@ body.lightbox-open {
     }
 
     nav {
-        gap: 18px;
+        gap: 10px;
     }
 
-    .project-gallery {
-        grid-template-columns:
-            repeat(2, 1fr);
+    /*
+       Three images become two on tablet/mobile
+       before eventually becoming one on small phones.
+    */
+
+    .project-gallery,
+    #published-work .project-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .skills-grid {
-        grid-template-columns: 1fr;
+    .project-card,
+    #published-work > article {
+        padding: 26px;
     }
-
 }
 
 
-@media (max-width: 600px) {
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 550px) {
 
     nav {
         position: relative;
@@ -1270,13 +1193,13 @@ body.lightbox-open {
 
         border-radius: 10px;
 
-        gap: 14px 20px;
+        gap: 12px 18px;
     }
 
     nav a {
         padding: 7px 9px;
 
-        font-size: 0.85rem;
+        font-size: 0.82rem;
     }
 
     header h1 {
@@ -1301,7 +1224,8 @@ body.lightbox-open {
         font-size: 1.65rem;
     }
 
-    .project-gallery {
+    .project-gallery,
+    #published-work .project-gallery {
         grid-template-columns: 1fr;
     }
 
@@ -1309,7 +1233,7 @@ body.lightbox-open {
         grid-template-columns: 1fr;
     }
 
-    #projects > article,
+    .project-card,
     #published-work > article {
         padding: 24px;
     }
@@ -1337,9 +1261,12 @@ body.lightbox-open {
 
         font-size: 27px;
     }
-
 }
 
+
+/* ================================
+   VERY SMALL SCREENS
+================================ */
 
 @media (max-width: 400px) {
 
@@ -1351,7 +1278,7 @@ body.lightbox-open {
         padding: 24px 17px;
     }
 
-    #projects > article,
+    .project-card,
     #published-work > article {
         padding: 20px;
     }
@@ -1359,5 +1286,4 @@ body.lightbox-open {
     .hero-links a {
         max-width: 100%;
     }
-
 }
