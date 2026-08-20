@@ -972,3 +972,50 @@ body.lightbox-open {
         font-size: 27px;
     }
 }
+/* ================================
+   DESKTOP PROJECT GRID
+================================ */
+
+@media (min-width: 901px) {
+
+    #projects > article,
+    #published-work > article {
+        display: inline-flex;
+        vertical-align: top;
+        width: calc(50% - 9px);
+        margin-right: 14px;
+        margin-bottom: 18px;
+        flex-direction: column;
+    }
+
+    #projects > article:nth-of-type(even),
+    #published-work > article:nth-of-type(even) {
+        margin-right: 0;
+    }
+
+    /* Keep galleries looking good inside the cards */
+    #projects .project-gallery,
+    #published-work .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Prevent cards from becoming excessively wide internally */
+    #projects article p,
+    #published-work article p {
+        max-width: none;
+    }
+}
+
+
+/* ================================
+   PROJECT GRID — TABLET / MOBILE
+================================ */
+
+@media (max-width: 900px) {
+
+    #projects > article,
+    #published-work > article {
+        width: 100%;
+        margin-right: 0;
+    }
+}
